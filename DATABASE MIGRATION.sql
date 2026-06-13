@@ -307,8 +307,6 @@ WHERE Bill_Amount < 0;
 
 SELECT SUM(Bill_Amount) AS Total_Bills FROM Medical_Records;
 
-
--- Check 8: Spot check — first 3 patients must match source
 SELECT Patient_ID, Full_Name, Gender, Blood_Group, Address
 FROM Patients
 ORDER BY Patient_ID
